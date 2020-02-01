@@ -57,14 +57,24 @@ public class Puzzle_ButtonCombo : MonoBehaviour
     {
         if(lettersCorrect < lettersNeeded)
         {
+            //We will need to show the letters in the UI somehow.
             Event e = Event.current;
             if (e.isKey)
             {
+                print(e.character);
                 if (e.character == generated[lettersCorrect])
                 {
                     print("Correct!");
                     lettersCorrect++;
                 }
+                /*
+                else if (e.character != " ")
+                {
+                    print("Incorrect.");
+                    lettersCorrect = lettersNeeded;
+                    loser = true;
+                }
+                */
             }
         }
         else
