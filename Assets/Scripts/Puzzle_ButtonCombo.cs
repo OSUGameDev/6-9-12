@@ -6,6 +6,8 @@ public class Puzzle_ButtonCombo : MonoBehaviour
 {
     public float maxTime = 100;
     public int lettersNeeded = 4;
+    public TextMesh LetterText;
+    public TextMesh TimeText;
 
     int lettersCorrect = 0;
     float countDown;
@@ -29,6 +31,12 @@ public class Puzzle_ButtonCombo : MonoBehaviour
             if (countDown > 0)
             {
                 countDown -= Time.deltaTime;
+                TimeText.text = "Time Left: " + countDown.ToString("f1");
+                if(lettersCorrect < lettersNeeded )
+                {
+                    LetterText.text = generated[lettersCorrect].ToString();
+                }
+                
             }
             else
             {
@@ -38,11 +46,15 @@ public class Puzzle_ButtonCombo : MonoBehaviour
         }
 
         if (winner == true)
+        {
             print("Winner!");
+        }
 
         if (loser == true)
+        {
             print("Loser!");
-    }
+        }
+}
 
     void letterGenerator()
     {
