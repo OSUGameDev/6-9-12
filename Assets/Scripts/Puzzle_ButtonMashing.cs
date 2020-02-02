@@ -6,6 +6,8 @@ public class Puzzle_ButtonMashing : MonoBehaviour
 {
     public int pressesNeeded = 10;
     public float maxTime = 5;
+    public TextMesh scoreLabel;
+    public TextMesh textLabel;
 
     int pressedCount = 0;
     float countDown;
@@ -27,6 +29,7 @@ public class Puzzle_ButtonMashing : MonoBehaviour
             if(countDown > 0)
             {
                 countDown -= Time.deltaTime;
+                textLabel.text = "Time Left: " + countDown.ToString("f1");
             }
             else
             {
@@ -39,6 +42,7 @@ public class Puzzle_ButtonMashing : MonoBehaviour
                 if (Input.GetKeyDown("space"))
                 {
                     pressedCount++;
+                    scoreLabel.text = "Score: " + pressedCount;
                 }
             }
             else
