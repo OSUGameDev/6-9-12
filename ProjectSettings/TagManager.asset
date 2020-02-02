@@ -42,12 +42,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Objects
-    uniqueID: 3021582045
-    locked: 0
   - name: Ground
     uniqueID: 3761891927
     locked: 0
   - name: Walls
     uniqueID: 2736911503
+    locked: 0
+  - name: Objects
+    uniqueID: 3021582045
+    locked: 0
+  - name: Ceiling
+    uniqueID: 3634395347
     locked: 0
