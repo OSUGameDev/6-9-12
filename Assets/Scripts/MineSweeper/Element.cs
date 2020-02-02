@@ -32,7 +32,7 @@ public class Element : MonoBehaviour
 
     public bool isCovered()
     {
-        return GetComponent<SpriteRenderer>().sprite.texture.name == "Default";
+        return GetComponent<SpriteRenderer>().sprite.texture.name == "Default_minesweep_tile";
     }
 
     void OnMouseUpAsButton()
@@ -58,8 +58,8 @@ public class Element : MonoBehaviour
             {
                 //Printing you win everytime the player doesn't lose. Fix that and jumping scenes will be fixed.
                 print("You win");
-                // SceneManager.LoadScene(1);
-                //PlayerPrefs.SetInt("roundResults", 1);
+                SceneManager.LoadScene(1);
+                PlayerPrefs.SetInt("roundResults", 1);
 
             }
         }
