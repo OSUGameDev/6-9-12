@@ -61,7 +61,14 @@ public class Puzzle_ButtonCombo : MonoBehaviour
            // animator.SetTrigger("FadeOut");
             SceneManager.LoadScene(1);
         }
-}
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            print("You lose!");
+            PlayerPrefs.SetInt("roundResults", 2);
+            SceneManager.LoadScene(1);
+        }
+    }
 
     void letterGenerator()
     {

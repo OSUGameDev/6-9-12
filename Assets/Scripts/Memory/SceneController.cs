@@ -95,7 +95,6 @@ public class SceneController : MonoBehaviour
             if (_score == 4)
             {
                 PlayerPrefs.SetInt("roundResults", 1);
-
                 SceneManager.LoadScene(1);
             }
         }
@@ -115,6 +114,16 @@ public class SceneController : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene("Scene_001");
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            print("You lose!");
+            PlayerPrefs.SetInt("roundResults", 2);
+            SceneManager.LoadScene(1);
+        }
     }
 
 }

@@ -33,6 +33,13 @@ public class Snake : MonoBehaviour
             dir = -Vector2.right;
         else if (Input.GetKey(KeyCode.UpArrow))
             dir = Vector2.up;
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            print("You lose!");
+            PlayerPrefs.SetInt("roundResults", 2);
+            SceneManager.LoadScene(1);
+        }
     }
 
     void Move()

@@ -67,5 +67,11 @@ public class Puzzle_ButtonMashing : MonoBehaviour
             SceneManager.LoadScene(1);
         }
 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            print("You lose!");
+            PlayerPrefs.SetInt("roundResults", 2);
+            SceneManager.LoadScene(1);
+        }
     }
 }

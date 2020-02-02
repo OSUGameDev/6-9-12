@@ -22,6 +22,16 @@ public class Element : MonoBehaviour
         Playfield.elements[x, y] = this;
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            print("You lose!");
+            PlayerPrefs.SetInt("roundResults", 2);
+            SceneManager.LoadScene(1);
+        }
+    }
+
     public void loadTexture(int adjacentCount)
     {
         if (mine)

@@ -38,6 +38,13 @@ public class Bird : MonoBehaviour
             PlayerPrefs.SetInt("roundResults", 1);
             SceneManager.LoadScene(1);
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            print("You lose!");
+            PlayerPrefs.SetInt("roundResults", 2);
+            SceneManager.LoadScene(1);
+        }
     }
 
     void OnCollisionEnter2D(Collision2D coll)
