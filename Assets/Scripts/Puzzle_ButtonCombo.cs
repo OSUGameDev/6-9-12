@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Puzzle_ButtonCombo : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class Puzzle_ButtonCombo : MonoBehaviour
     bool winner = false;
     bool loser = false;
     char[] generated = new char[4];
+
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -48,11 +51,15 @@ public class Puzzle_ButtonCombo : MonoBehaviour
         if (winner == true)
         {
             print("Winner!");
+           // animator.SetTrigger("FadeOut");
+            SceneManager.LoadScene(1);
         }
 
         if (loser == true)
         {
             print("Loser!");
+           // animator.SetTrigger("FadeOut");
+            SceneManager.LoadScene(1);
         }
 }
 

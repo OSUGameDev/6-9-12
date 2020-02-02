@@ -1,10 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Puzzle_ButtonMashing : MonoBehaviour
 {
-    public int pressesNeeded = 10;
+    public int pressesNeeded = 30;
     public float maxTime = 5;
     public TextMesh scoreLabel;
     public TextMesh textLabel;
@@ -53,9 +54,18 @@ public class Puzzle_ButtonMashing : MonoBehaviour
         }
 
         if (winner == true)
+        {
             print("Winner!");
+            SceneManager.LoadScene(1);
+
+        }
+
 
         if (loser == true)
+        {
             print("Loser!");
+            SceneManager.LoadScene(1);
+        }
+
     }
 }
