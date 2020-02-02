@@ -9,7 +9,7 @@ public class RocketLevelScript : MonoBehaviour
     public bool activateMe;
     public GameObject myobject;
     private GameObject[] gameObjects;
-    private int numberOfGameObjects = 7;
+   // private int numberOfGameObjects = 7;
 
     public int randomGenerate()
     {

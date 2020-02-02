@@ -337,7 +337,7 @@ Transform:
   m_LocalScale: {x: 2.5361316, y: 2.5361316, z: 0}
   m_Children: []
   m_Father: {fileID: 1073084264}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &103449578
 MonoBehaviour:
@@ -12336,7 +12336,7 @@ Transform:
   m_LocalScale: {x: 2.5361316, y: 2.5361316, z: 0}
   m_Children: []
   m_Father: {fileID: 1073084264}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &904783894
 MonoBehaviour:
@@ -17876,13 +17876,13 @@ Transform:
   m_LocalPosition: {x: 1.7746027, y: -0.716009, z: -16.057535}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2138877885}
-  - {fileID: 904783893}
-  - {fileID: 266431286}
-  - {fileID: 1628929860}
   - {fileID: 1595748196}
+  - {fileID: 1628929860}
+  - {fileID: 266431286}
   - {fileID: 2118538898}
   - {fileID: 103449577}
+  - {fileID: 904783893}
+  - {fileID: 2138877885}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -91946,7 +91946,7 @@ Transform:
   m_LocalScale: {x: 2.5361316, y: 2.5361316, z: 0}
   m_Children: []
   m_Father: {fileID: 1073084264}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1595748197
 MonoBehaviour:
@@ -92105,7 +92105,7 @@ Transform:
   m_LocalScale: {x: 2.5361316, y: 2.5361316, z: 0}
   m_Children: []
   m_Father: {fileID: 1073084264}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1628929861
 MonoBehaviour:
@@ -92699,7 +92699,7 @@ Transform:
   m_LocalScale: {x: 2.5361316, y: 2.5361316, z: 0}
   m_Children: []
   m_Father: {fileID: 1073084264}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2118538899
 MonoBehaviour:
@@ -92832,7 +92832,7 @@ Transform:
   m_LocalScale: {x: 2.5361316, y: 2.5361316, z: 0}
   m_Children: []
   m_Father: {fileID: 1073084264}
-  m_RootOrder: 0
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &2138877886
 BoxCollider2D:
