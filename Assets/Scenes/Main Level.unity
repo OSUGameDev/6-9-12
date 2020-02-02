@@ -120,6 +120,80 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &65901629
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4585299894863912018, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+        type: 3}
+      propertyPath: m_Name
+      value: LevelChanger
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585299894863912016, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 660.50684
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585299894863912016, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 84.82391
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585299894863912016, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -800.9949
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585299894863912016, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585299894863912016, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585299894863912016, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585299894863912016, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585299894863912016, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585299894863912016, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585299894863912016, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585299894863912016, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585299894183079272, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9ca383c8bcd2fd746aa0b3109f3a597c, type: 3}
 --- !u!1 &103449573
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c57d47cc7113e2040a0ebc3e447d3cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 383311383}
   newScene: 7
 --- !u!114 &103449579
 MonoBehaviour:
@@ -420,6 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c57d47cc7113e2040a0ebc3e447d3cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 383311383}
   newScene: 5
 --- !u!114 &266431288
 MonoBehaviour:
@@ -3723,6 +3799,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!95 &383311383 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4585299894863912019, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+    type: 3}
+  m_PrefabInstance: {fileID: 65901629}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &412962823
 GameObject:
   m_ObjectHideFlags: 0
@@ -12168,7 +12250,7 @@ Animator:
   m_GameObject: {fileID: 904783889}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ba3ea40afe571e340890d4f60c73c23b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2ecc5dbd706c88441b05930d6e9e3489, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12253,6 +12335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c57d47cc7113e2040a0ebc3e447d3cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 383311383}
   newScene: 4
 --- !u!114 &904783895
 MonoBehaviour:
@@ -91862,6 +91945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c57d47cc7113e2040a0ebc3e447d3cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 383311383}
   newScene: 8
 --- !u!114 &1595748198
 MonoBehaviour:
@@ -91935,7 +92019,7 @@ Animator:
   m_GameObject: {fileID: 1628929856}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ba3ea40afe571e340890d4f60c73c23b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2ecc5dbd706c88441b05930d6e9e3489, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -92020,6 +92104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c57d47cc7113e2040a0ebc3e447d3cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 383311383}
   newScene: 3
 --- !u!114 &1628929862
 MonoBehaviour:
@@ -92483,8 +92568,8 @@ GameObject:
   - component: {fileID: 2118538897}
   - component: {fileID: 2118538896}
   - component: {fileID: 2118538895}
-  - component: {fileID: 2118538899}
   - component: {fileID: 2118538900}
+  - component: {fileID: 2118538899}
   m_Layer: 0
   m_Name: Arrow - Life Support
   m_TagString: Untagged
@@ -92528,7 +92613,7 @@ Animator:
   m_GameObject: {fileID: 2118538894}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: ba3ea40afe571e340890d4f60c73c23b, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2ecc5dbd706c88441b05930d6e9e3489, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -92613,6 +92698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c57d47cc7113e2040a0ebc3e447d3cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 383311383}
   newScene: 2
 --- !u!114 &2118538900
 MonoBehaviour:
@@ -92771,6 +92857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c57d47cc7113e2040a0ebc3e447d3cad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 383311383}
   newScene: 7
 --- !u!114 &2138877888
 MonoBehaviour:

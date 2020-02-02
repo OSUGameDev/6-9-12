@@ -8,6 +8,8 @@ using UnityEngine.SceneManagement;
 public class SceneChangeTrigger : MonoBehaviour
 {
 
+    public Animator animator;
+
     [SerializeField]
     private int newScene;
  
@@ -15,6 +17,7 @@ public class SceneChangeTrigger : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            animator.SetTrigger("FadeOut");
             SceneManager.LoadScene(newScene);
         }
     }

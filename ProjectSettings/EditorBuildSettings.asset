@@ -11,9 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 8d124a732523f3d4cafbef96395163f8
-  - enabled: 0
-    path: Assets/Scenes/Tests/Griffin_test_scene.unity
-    guid: 3c774b62d7137cc459fdbb6fb6bf8dda
   - enabled: 1
     path: Assets/Scenes/Main Level.unity
     guid: e6f8c264e6dd7354fb56e7e7b65af29d
@@ -35,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mini Games/Nathan_Puzzles_ButtonMashing.unity
     guid: fc065eb94fc1efc458f95606a9df0526
+  - enabled: 1
+    path: Assets/Scenes/Mini Games/Nathan_Puzzles_Memory.unity
+    guid: e674fa9130140a24da6b20dd71ee3983
   m_configObjects: {}

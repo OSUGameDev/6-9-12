@@ -7,6 +7,9 @@ public class mainMenu : MonoBehaviour
     public int playerLives;
     public int numRounds;
 
+    public Animator animator;
+
+
     public void NewGame()
     {
         SceneManager.LoadScene(1);
@@ -17,7 +20,9 @@ public class mainMenu : MonoBehaviour
     public void playGame ()
     {
         //Put our main gameplay scene will go after this within our build.
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+        animator.SetTrigger("FadeOut");
+        SceneManager.LoadScene(1);
 
     }
 
