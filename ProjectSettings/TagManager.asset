@@ -51,3 +51,6 @@ TagManager:
   - name: Walls
     uniqueID: 2736911503
     locked: 0
+  - name: Space
+    uniqueID: 1920720635
+    locked: 0
