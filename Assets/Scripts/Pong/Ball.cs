@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Ball : MonoBehaviour
 {
@@ -59,12 +60,16 @@ public class Ball : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             print("You win!");
+            PlayerPrefs.SetInt("roundResults", 1);
+            SceneManager.LoadScene(1);
         }
 
         if(botPoints == pointsNeeded)
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
             print("You lose!");
+            PlayerPrefs.SetInt("roundResults", 2);
+            SceneManager.LoadScene(1);
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class Snake : MonoBehaviour
 {
@@ -66,6 +67,8 @@ public class Snake : MonoBehaviour
         {
             playing = false;
             print("You lose");
+            PlayerPrefs.SetInt("roundResults", 2);
+            SceneManager.LoadScene(1);
         }
     }
 }

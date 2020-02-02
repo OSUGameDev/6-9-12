@@ -42,6 +42,7 @@ public class Element : MonoBehaviour
             Playfield.uncoverMines();
 
             print("you lose");
+            PlayerPrefs.SetInt("roundResults", 2);
             SceneManager.LoadScene(1);
 
         }
@@ -57,7 +58,9 @@ public class Element : MonoBehaviour
             {
                 //Printing you win everytime the player doesn't lose. Fix that and jumping scenes will be fixed.
                 print("You win");
-               // SceneManager.LoadScene(1);
+                // SceneManager.LoadScene(1);
+                //PlayerPrefs.SetInt("roundResults", 1);
+
             }
         }
     }

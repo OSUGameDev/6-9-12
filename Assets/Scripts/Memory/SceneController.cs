@@ -91,6 +91,13 @@ public class SceneController : MonoBehaviour
         {
             _score++;
             scoreLabel.text = "Score: " + _score;
+
+            if (_score == 4)
+            {
+                PlayerPrefs.SetInt("roundResults", 1);
+
+                SceneManager.LoadScene(1);
+            }
         }
         else
         {

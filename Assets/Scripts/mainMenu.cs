@@ -4,6 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class mainMenu : MonoBehaviour
 {
+    public int playerLives;
+    public int numRounds;
+
+    public void NewGame()
+    {
+        SceneManager.LoadScene(1);
+        PlayerPrefs.SetInt("NumRounds", numRounds);
+        PlayerPrefs.SetInt("roundResults", 0);
+    }
 
     public void playGame ()
     {
