@@ -9,14 +9,15 @@ public class Bird : MonoBehaviour
     public float force = 300;
     public float maxTime = 10;
     public Rigidbody2D rb;
+    public float waitTime = 5;
 
     float countDown;
 
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
-        countDown = maxTime;
+        StartCoroutine(gameStarter());
+        countDown = maxTime + waitTime;
     }
 
     // Update is called once per frame
@@ -44,5 +45,13 @@ public class Bird : MonoBehaviour
         Debug.Log("You lose");
         PlayerPrefs.SetInt("roundResults", 2);
         SceneManager.LoadScene(1);
+    }
+
+    IEnumerator gameStarter()
+    {
+        rb.constraints = RigidbodyConstraints2D.FreezePositionY;
+        yield return new WaitForSeconds(waitTime);
+        rb.constraints = RigidbodyConstraints2D.None;
+        GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
     }
 }
