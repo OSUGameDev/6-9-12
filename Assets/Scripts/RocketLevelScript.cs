@@ -45,19 +45,7 @@ public class RocketLevelScript : MonoBehaviour
                 //Any UI loss stuff goes here
             }
 
-            print(gameObjects.Length);
-
-            randomBroken = randomGenerate();
-            print(randomBroken);
-
-            //for (int i = 0; i < gameObjects.Length; i++)
-           // {
-                //gameObjects[i].SetActive(false);
-           //}
-
-            gameObjects[randomBroken].SetActive(true);
-
-            if (randomBroken == 0)
+        if (randomBroken == 0)
             {
                 //Comms Array
                 print("Comms Array is broken.");
