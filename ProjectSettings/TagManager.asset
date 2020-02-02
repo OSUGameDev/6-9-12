@@ -3,8 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Wall
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -14,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - WeirdPhysics
+  - 
   - 
   - 
   - 
@@ -41,21 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Ground
-    uniqueID: 3761891927
-    locked: 0
-  - name: Walls
-    uniqueID: 2736911503
-    locked: 0
-<<<<<<< HEAD
-  - name: Objects
-    uniqueID: 3021582045
-    locked: 0
-  - name: Ceiling
-    uniqueID: 3634395347
-=======
-  - name: Space
-    uniqueID: 1920720635
->>>>>>> 565de8d98ed2af74d9ed2dc5459fd41482176696
     locked: 0
