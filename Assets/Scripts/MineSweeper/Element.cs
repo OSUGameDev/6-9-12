@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Element : MonoBehaviour
 {
     public bool mine;
+
+    private bool change = false;
 
     public Sprite[] emptyTextures;
     public Sprite mineTexture;
@@ -39,6 +42,8 @@ public class Element : MonoBehaviour
             Playfield.uncoverMines();
 
             print("you lose");
+            SceneManager.LoadScene(1);
+
         }
         else
         {
@@ -49,7 +54,11 @@ public class Element : MonoBehaviour
             Playfield.FFuncover(x, y, new bool[Playfield.w, Playfield.h]);
 
             if (Playfield.isFinished())
+            {
+                //Printing you win everytime the player doesn't lose. Fix that and jumping scenes will be fixed.
                 print("You win");
+               // SceneManager.LoadScene(1);
+            }
         }
     }
 }

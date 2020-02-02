@@ -6,12 +6,33 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/Testing/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 8d124a732523f3d4cafbef96395163f8
-  - enabled: 1
-    path: Assets/Scenes/Testing/Griffin_test_scene.unity
+  - enabled: 0
+    path: Assets/Scenes/Tests/Griffin_test_scene.unity
     guid: 3c774b62d7137cc459fdbb6fb6bf8dda
+  - enabled: 1
+    path: Assets/Scenes/Main Level.unity
+    guid: e6f8c264e6dd7354fb56e7e7b65af29d
+  - enabled: 1
+    path: Assets/Scenes/Mini Games/Nathan_Puzzles_MineSweeper.unity
+    guid: 180972e2a5962ce47a297b501739541e
+  - enabled: 1
+    path: Assets/Scenes/Mini Games/Nathan_Puzzles_Flappy.unity
+    guid: f7a1bac6c0287b649bbc471f8df58ff7
+  - enabled: 1
+    path: Assets/Scenes/Mini Games/Nathan_Puzzles_Pong.unity
+    guid: 2ab78326d69195e4a93c2ea1bdc619f1
+  - enabled: 1
+    path: Assets/Scenes/Mini Games/Nathan_Puzzles_Snake.unity
+    guid: a91330c6f102fbc4fb5b6d042be58f76
+  - enabled: 1
+    path: Assets/Scenes/Mini Games/Nathan_Puzzles_ButtonCombo.unity
+    guid: bbad9424b45be61489a0c739a048936b
+  - enabled: 1
+    path: Assets/Scenes/Mini Games/Nathan_Puzzles_ButtonMashing.unity
+    guid: fc065eb94fc1efc458f95606a9df0526
   m_configObjects: {}

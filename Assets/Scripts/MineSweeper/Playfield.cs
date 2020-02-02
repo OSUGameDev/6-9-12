@@ -62,8 +62,10 @@ public class Playfield
     {
         foreach (Element elem in elements)
             if (elem.isCovered() && !elem.mine)
+            {
                 return false;
-
+            }
+               
         return true;
     }
 }
