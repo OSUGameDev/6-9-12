@@ -7,6 +7,7 @@ public class Ball : MonoBehaviour
 {
     public float speed = 30;
     public float pointsNeeded = 3;
+    public Vector2 maxSpeed;
 
     int playerPoints = 0;
     int botPoints = 0;
@@ -14,6 +15,8 @@ public class Ball : MonoBehaviour
     void Start()
     {
         GetComponent<Rigidbody2D>().velocity = Vector2.left * speed;
+        maxSpeed.x = speed;
+        maxSpeed.y = speed;
     }
 
     void OnCollisionEnter2D(Collision2D col)
@@ -56,6 +59,11 @@ public class Ball : MonoBehaviour
 
     void Update()
     {
+        if(GetComponent<Rigidbody2D>().velocity.x > speed || GetComponent<Rigidbody2D>().velocity.y > speed)
+        {
+            GetComponent<Rigidbody2D>().velocity = maxSpeed;
+        }
+
         if(playerPoints == pointsNeeded)
         {
             GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
