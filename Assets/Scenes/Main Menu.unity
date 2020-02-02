@@ -201,8 +201,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1570796977}
-        m_MethodName: 
+      - m_Target: {fileID: 1570796979}
+        m_MethodName: playGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -515,7 +515,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 3.360414
+  m_AspectRatio: 1.9570793
 --- !u!1 &468411188
 GameObject:
   m_ObjectHideFlags: 0

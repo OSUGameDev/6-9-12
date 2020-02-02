@@ -21,7 +21,7 @@ public class mainMenu : MonoBehaviour
     {
         //Put our main gameplay scene will go after this within our build.
 
-        animator.SetTrigger("FadeOut");
+        //animator.SetTrigger("FadeOut");
         SceneManager.LoadScene(1);
 
     }

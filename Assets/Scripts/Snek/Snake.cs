@@ -8,12 +8,14 @@ public class Snake : MonoBehaviour
 {
     public GameObject tailPrefab;
     public float speed = 0.3f;
+    public int needToEat = 10;
 
     Vector2 dir = Vector2.right;
     List<Transform> tail = new List<Transform>();
     bool ate = false;
     bool playing = true;
-
+    int eaten = 0;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -62,6 +64,15 @@ public class Snake : MonoBehaviour
         {
             ate = true;
             Destroy(coll.gameObject);
+            eaten++;
+
+            if(needToEat == eaten)
+            {
+                playing = false;
+                PlayerPrefs.SetInt("roundResults", 1);
+                SceneManager.LoadScene(1);
+                print("You win!");
+            }
         }
         else if(coll.gameObject.tag == "Wall")
         {
