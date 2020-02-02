@@ -50,10 +50,10 @@ public class RocketLevelScript : MonoBehaviour
             randomBroken = randomGenerate();
             print(randomBroken);
 
-            for (int i = 0; i < gameObjects.Length; i++)
-            {
-                gameObjects[i].SetActive(false);
-            }
+            //for (int i = 0; i < gameObjects.Length; i++)
+           // {
+                //gameObjects[i].SetActive(false);
+           //}
 
             gameObjects[randomBroken].SetActive(true);
 

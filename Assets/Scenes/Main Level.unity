@@ -352,7 +352,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 383311383}
-  newScene: 7
+  newScene: 6
 --- !u!114 &103449579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91969,7 +91969,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1595748192}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f916946f9ef0e1d4f83919ccf0b4a4d0, type: 3}
   m_Name: 
@@ -92526,7 +92526,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1902749049}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f916946f9ef0e1d4f83919ccf0b4a4d0, type: 3}
   m_Name: 
