@@ -132,6 +132,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelChanger
       objectReference: {fileID: 0}
+    - target: {fileID: 4585299894863912018, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4585299894863912016, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -192,6 +197,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4585299894905646230, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 194.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4585299894905646230, guid: 9ca383c8bcd2fd746aa0b3109f3a597c,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 184
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ca383c8bcd2fd746aa0b3109f3a597c, type: 3}
 --- !u!1 &103449573
@@ -210,7 +225,7 @@ GameObject:
   - component: {fileID: 103449579}
   m_Layer: 0
   m_Name: Arrow - Landing Gear
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -369,7 +384,7 @@ GameObject:
   - component: {fileID: 266431288}
   m_Layer: 0
   m_Name: Arrow - Thrusters
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12209,7 +12224,7 @@ GameObject:
   - component: {fileID: 904783895}
   m_Layer: 0
   m_Name: Arrow - Heat Shield
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12250,7 +12265,7 @@ Animator:
   m_GameObject: {fileID: 904783889}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2ecc5dbd706c88441b05930d6e9e3489, type: 2}
+  m_Controller: {fileID: 9100000, guid: ba3ea40afe571e340890d4f60c73c23b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12528,7 +12543,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 20
+  m_SortingOrder: 22
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -91819,7 +91834,7 @@ GameObject:
   - component: {fileID: 1595748198}
   m_Layer: 0
   m_Name: Arrow - Comms
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -91978,7 +91993,7 @@ GameObject:
   - component: {fileID: 1628929862}
   m_Layer: 0
   m_Name: Arrow - AntiGrav
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92019,7 +92034,7 @@ Animator:
   m_GameObject: {fileID: 1628929856}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2ecc5dbd706c88441b05930d6e9e3489, type: 2}
+  m_Controller: {fileID: 9100000, guid: ba3ea40afe571e340890d4f60c73c23b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -92572,7 +92587,7 @@ GameObject:
   - component: {fileID: 2118538899}
   m_Layer: 0
   m_Name: Arrow - Life Support
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92613,7 +92628,7 @@ Animator:
   m_GameObject: {fileID: 2118538894}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2ecc5dbd706c88441b05930d6e9e3489, type: 2}
+  m_Controller: {fileID: 9100000, guid: ba3ea40afe571e340890d4f60c73c23b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -92731,7 +92746,7 @@ GameObject:
   - component: {fileID: 2138877888}
   m_Layer: 0
   m_Name: Arrow - Batteries
-  m_TagString: Untagged
+  m_TagString: Arrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -92792,7 +92807,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 20
   m_Sprite: {fileID: -8941471231465056344, guid: c29d0370b7449774292948f37a683196,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
